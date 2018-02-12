@@ -38,7 +38,7 @@ namespace SimpleClasses
         {
             decimal carValue = 100.0M;
 
-            if (this.Year > 2005)
+            if (Year > 2005)
                 carValue = 15000;
             else
                 carValue = 2000;
