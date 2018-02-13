@@ -13,6 +13,7 @@ namespace TimerExample
         {
             Timer myTimer = new Timer(2000);
 
+            // Add event handlers
             myTimer.Elapsed += MyTimer_Elapsed;
             myTimer.Elapsed += MyTimer_Elapsed1;
 
@@ -21,6 +22,7 @@ namespace TimerExample
             Console.WriteLine("Press enter to remove the red event.");
             Console.ReadLine();
 
+            // Remove event handler
             myTimer.Elapsed -= MyTimer_Elapsed1;
 
             Console.ReadLine();
